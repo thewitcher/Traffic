@@ -2,7 +2,7 @@ language: cpp
 compiler:
   - gcc
 install:
-  - sudo apt-get-repository ppa:canonical-qt5-edgers/qt5-proper
+  - sudo apt-add-repository ppa:canonical-qt5-edgers/qt5-proper
   - sudo apt-get update
   - sudo apt-get install qtdeclarative5-dev
 # Change this to your needs
