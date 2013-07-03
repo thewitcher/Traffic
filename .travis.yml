@@ -9,6 +9,8 @@ install:
 env: QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
 script:
   - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake -v
-  - cd Src
+# Build application 
+  - cd Src/App
   - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   - make
+#Build tests
