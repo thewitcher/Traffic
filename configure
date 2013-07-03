@@ -1,3 +1,4 @@
 #!/usr/bin/perl -w
 
-print "--> compiling\n";
+print "qmake version\n";
+system( "qmake -v" )
