@@ -8,6 +8,6 @@ install:
 # Change this to your needs
 env: QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
 script:
-  - qmake -v
-  - qmake
+  - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake -v
+  - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   - make
