@@ -12,7 +12,7 @@ $RUN_COMMAND = "./test.out";
 $MAKE = "make";
 
 print "Script call directory: ".getcwd()."\n";
-chdir( "../Tests" ) == 0 or die "Cannot change directory: $!\n";
+chdir( "../Tests" ) == 0 or die "Cannot change directory 1\n";
 $currentDir = getcwd();
 
 print "Searching for all tests in\n$currentDir\n";
