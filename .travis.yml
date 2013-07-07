@@ -16,4 +16,5 @@ script:
 # Build and run tests
   - cd ../../
   - pwd
+  - sudo chmod 777 Scripts/BuildAndRunTests.pl
   - perl ./Scripts/BuildAndRunTests.pl

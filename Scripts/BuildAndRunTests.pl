@@ -11,9 +11,7 @@ $QMAKE = "/usr/lib/x86_64-linux-gnu/qt5/bin/qmake";
 $RUN_COMMAND = "./test.out";
 $MAKE = "make";
 
-print "Script call directory: ".getcwd()."\n";
-chdir( "../Tests" ) == 0 or die "Cannot change directory 1\n";
-$currentDir = getcwd();
+$currentDir = getcwd()."/Src/Tests";
 
 print "Searching for all tests in\n$currentDir\n";
 
@@ -25,7 +23,7 @@ $currentElement = "";
 $absPath = "";
 foreach( @FILES )
 {
-	system( "cd ".$currentDir ) == 0 or die "Cannot change directory 2\n";
+	chdir( $currentDir ) == 0 or die "Cannot change directory 2\n";
 	$currentElement = $_;
 	$absPath = abs_path( $currentElement );
 
@@ -37,7 +35,7 @@ foreach( @FILES )
 		{
 			print "Get into directory: $absPath\n";
 			print "Call qmake from here\n";
-			system( "cd ".$absPath ) == 0 or die "Cannot change directory 3\n";
+			chdir( $absPath ) == 0 or die "Cannot change directory 3\n";
 		        system( $QMAKE ) == 0 or die "Qmake failed in $absPath\n";
 			system( $MAKE ) == 0 or die "Make failed in $absPath\n";
 			system( $RUN_COMMAND ) == 0 or die "Run test failed\n";
