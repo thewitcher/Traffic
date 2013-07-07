@@ -1,8 +1,1 @@
-Steps to add new qt unit test:
-- create new unit test from qt creator
-- be sure that <test name>.pro file is located in ../Test/<New test folder>/
-- change target in pro file to test.out
-
-Exmaples:
- - SimpleUnitTest
- - SimpleUnitTest1
+Remember to add test into .travis.yml file.

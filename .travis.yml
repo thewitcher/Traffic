@@ -13,8 +13,13 @@ script:
   - cd Src/App
   - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   - make
-# Build and run tests
-  - cd ../../
-  - pwd
-  - sudo chmod 777 Scripts/BuildAndRunTests.pl
-  - perl ./Scripts/BuildAndRunTests.pl
+# Build and run SimpleUnitTest test
+  - cd /home/travi/thewitcher/Traffic/Src/Tests/SimpleUnitTest
+  - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
+  - make
+  - ./test.out
+# Build and run SimpleUnitTest1 test
+  - cd /home/travi/thewitcher/Traffic/Src/Tests/SimpleUnitTest1
+  - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
+  - make
+  - ./test.out
