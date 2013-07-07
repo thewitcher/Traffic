@@ -11,6 +11,7 @@ $QMAKE = "/usr/lib/x86_64-linux-gnu/qt5/bin/qmake";
 $RUN_COMMAND = "./test.out";
 $MAKE = "make";
 
+print "Script call directory: ".getcwd()."\n";
 chdir( "../Src/Tests" );
 $currentDir = getcwd();
 
