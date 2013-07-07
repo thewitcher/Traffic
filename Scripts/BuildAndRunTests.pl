@@ -4,7 +4,7 @@ use Cwd;
 use Cwd 'abs_path';
 
 $QMAKE = "/usr/lib/x86_64-linux-gnu/qt5/bin/qmake";
-$RUN_COMMAND = "./test.out"
+$RUN_COMMAND = "./test.out";
 $MAKE = "make";
 
 chdir( "../Src/Tests" );
