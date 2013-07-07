@@ -14,12 +14,12 @@ script:
   - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   - make
 # Build and run SimpleUnitTest test
-  - cd /home/travi/thewitcher/Traffic/Src/Tests/SimpleUnitTests
+  - cd /home/travis/thewitcher/Traffic/Src/Tests/SimpleUnitTests
   - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   - make
   - ./test.out
 # Build and run SimpleUnitTest1 test
-  - cd /home/travi/thewitcher/Traffic/Src/Tests/SimpleUnitTests1
+  - cd /home/travis/thewitcher/Traffic/Src/Tests/SimpleUnitTests1
   - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   - make
   - ./test.out
