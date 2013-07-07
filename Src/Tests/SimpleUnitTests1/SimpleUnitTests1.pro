@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2013-07-06T21:18:15
+# Project created by QtCreator 2013-07-07T12:08:17
 #
 #-------------------------------------------------
 
@@ -15,5 +15,5 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += tst_simpleunitteststest.cpp
+SOURCES += tst_simpleunittests1test.cpp
 DEFINES += SRCDIR=\\\"$$PWD/\\\"

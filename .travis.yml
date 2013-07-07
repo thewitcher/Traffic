@@ -1,4 +1,4 @@
-language: cpp
+anguage: cpp
 compiler:
   - gcc
 install:
@@ -13,9 +13,5 @@ script:
   - cd Src/App
   - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   - make
-# Build tests
-  - cd ../Tests/SimpleUnitTests
-  - /usr/lib/x86_64-linux-gnu/qt5/bin/qmake
-  - make
-# Run tests
-  - ./tst_simpleunitteststest
+# Build and run tests
+  - perl ../../Scripts/BuildAndRunTests.pl

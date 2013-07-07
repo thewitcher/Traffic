@@ -22,6 +22,6 @@ void SimpleUnitTestsTest::simpleTest()
 	QVERIFY2( true, "Failure" );
 }
 
-QTEST_APPLESS_MAIN(SimpleUnitTestsTest)
+QTEST_APPLESS_MAIN( SimpleUnitTestsTest )
 
 #include "tst_simpleunitteststest.moc"
